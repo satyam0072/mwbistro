@@ -1,0 +1,180 @@
+{
+  "project_identity": {
+    "name": "MW Bistro (Bus Cafe)",
+    "location": "P&M, Mall Rd, Kurji, Patna, Bihar 800010",
+    "phone": "06202224214",
+    "whatsapp": "+91 62022 4214",
+    "tagline": "A Cozy Ride to Great Food & Beautiful Moments.",
+    "aesthetic": "Warm, Candlelit Editorial Night-Café Aesthetic",
+    "app_type": "landing_page (single-page restaurant website with an admin sub-route)"
+  },
+  "design_principles": [
+    "Fusion over Imitation: Combine vintage bus architecture visuals with luxury editorial typography and warm candlelit night photography.",
+    "Emotion First: Evoke warmth, romantic intimacy, starlit enchantment, and gourmet comfort in every section.",
+    "Content as Cinema: Treat every section as a numbered manifesto chapter with deliberate line-by-line reveals, ambient lighting effects, and warm golden glows.",
+    "Negative Space & Contrast: Soft cream background contrasts against deep warm espresso dark zones and rich gold highlights."
+  ],
+  "typography": {
+    "headings": {
+      "family": "'Playfair Display', 'Cormorant Garamond', serif",
+      "h1": "text-4xl sm:text-5xl lg:text-6xl font-serif tracking-tight leading-tight",
+      "h2": "text-2xl sm:text-3xl lg:text-4xl font-serif tracking-tight",
+      "h3": "text-xl sm:text-2xl font-serif",
+      "h4": "text-lg sm:text-xl font-serif"
+    },
+    "body": {
+      "family": "'Plus Jakarta Sans', 'Outfit', sans-serif",
+      "size": "text-base leading-relaxed text-[#4A3B32]",
+      "small": "text-sm text-[#7A695D]"
+    },
+    "mono_accents": {
+      "family": "'JetBrains Mono', monospace",
+      "usage": "Overlines, chapter numbers, timestamps, badges ('CHAPTER 01', 'EST. 2011', 'PATNA, BIHAR')"
+    }
+  },
+  "colors": {
+    "theme": "Warm Night Cafe & Candlelit Gold",
+    "background_light": "#FAF6F0",
+    "background_card": "#FFFDF9",
+    "background_dark": "#18110D",
+    "background_dark_card": "#241B15",
+    "text_primary_dark_bg": "#F5EFE6",
+    "text_secondary_dark_bg": "#C4B5A5",
+    "text_primary_light_bg": "#2C1E16",
+    "text_secondary_light_bg": "#6B584C",
+    "gold_accent": "#D4AF37",
+    "gold_light": "#F3E5AB",
+    "gold_glow": "rgba(212, 175, 55, 0.25)",
+    "rose_romantic_accent": "#C86D51",
+    "border_subtle": "rgba(212, 175, 55, 0.18)",
+    "glass_bg": "rgba(24, 17, 13, 0.82)"
+  },
+  "visual_enhancers": {
+    "glassmorphism": "backdrop-blur-xl bg-[#18110D]/80 border border-[#D4AF37]/20 shadow-2xl",
+    "card_shadows": "shadow-[0_12px_36px_-8px_rgba(28,18,12,0.12)] hover:shadow-[0_20px_48px_-10px_rgba(212,175,55,0.2)]",
+    "candlelight_glow": "shadow-[0_0_30px_rgba(212,175,55,0.15)]",
+    "borders": "rounded-2xl border border-[#D4AF37]/20",
+    "badges": "inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full text-xs font-mono uppercase tracking-widest bg-[#D4AF37]/10 text-[#D4AF37] border border-[#D4AF37]/30"
+  },
+  "layout_and_sections": {
+    "navigation": {
+      "type": "Sticky Glass Header",
+      "elements": [
+        "MW Bistro Brand Logo with glowing heart/bus icon",
+        "Nav Links: Home, About, Why Visit, Menu, Gallery, Booking, Contact",
+        "CTA Button: 'BOOK A TABLE' (Opens prefilled WhatsApp booking modal or scrolls to Booking section)",
+        "Mobile responsive drawer menu"
+      ]
+    },
+    "hero": {
+      "type": "Kinetic Hero with Line-by-Line Reveal",
+      "headline": "A Cozy Ride to Great Food & Beautiful Moments.",
+      "features": [
+        "Real MW Bistro night-time photography showcasing glowing bus exterior & fairy light canopy",
+        "Floating info pill badges: 'Patna's Original Bus Café', 'Loved by Couples', 'Open 3 PM - 11:30 PM'",
+        "Action Buttons: Book via WhatsApp, Call Direct (06202224214), Get Directions"
+      ]
+    },
+    "manifesto_about": {
+      "chapter": "CHAPTER 01",
+      "title": "The Story Behind Patna's First Bus Bistro",
+      "cards": [
+        {"title": "Vintage Bus Architecture", "desc": "Authentic converted bus interior transformed into cozy dining booths with ambient fairy lights."},
+        {"title": "Starlit Canopy & Drapes", "desc": "Romantic outdoor garden setting with warm drapes, glowing lanterns, and intimate couple tables."},
+        {"title": "Handcrafted Bistro Menu", "desc": "From sizzling pasta & artisan pizzas to refreshing lattes and decadent desserts."}
+      ]
+    },
+    "why_visit": {
+      "chapter": "CHAPTER 02",
+      "title": "6 Reasons Couples & Foodies Love MW Bistro",
+      "card_count": 6,
+      "items": [
+        "Candlelit Romantic Ambiance",
+        "Exclusive Cozy Bus Booths",
+        "Special Birthday & Anniversary Setup",
+        "Instaworthy Photo Corners",
+        "Chef's Signature Fusion Menu",
+        "Warm Hospitality & Vibe"
+      ]
+    },
+    "couple_friendly_split": {
+      "chapter": "CHAPTER 03",
+      "title": "Designed for Date Nights & Unforgettable Dates",
+      "highlights": ["Private dining vibe inside the bus", "Romantic fairy lights setup", "Curated couple combo treats", "Custom surprise celebrations"]
+    },
+    "menu_section": {
+      "chapter": "CHAPTER 04",
+      "title": "Culinary Delights & Cafe Favorites",
+      "categories": [
+        "Starters & Snacks",
+        "Pizzas & Garlic Bread",
+        "Pasta & Italian Classics",
+        "North Indian & Biryani",
+        "Coffee & Beverages",
+        "Desserts & Shakes"
+      ],
+      "features": [
+        "Tabbed category switcher",
+        "Price, description, vegetarian/non-veg tags",
+        "Search & filter menu items",
+        "Admin edit sub-route button ('Edit Menu' with password protection)"
+      ]
+    },
+    "gallery_section": {
+      "chapter": "CHAPTER 05",
+      "title": "Moments Caught Under the Fairy Lights",
+      "type": "Masonry Grid with Lightbox Modal",
+      "images": "High quality real uploaded MW Bistro photos & curated aesthetic dining photos"
+    },
+    "booking_section": {
+      "chapter": "CHAPTER 06",
+      "title": "Reserve Your Cozy Table",
+      "features": [
+        "Interactive Form: Name, Phone, Date, Time, Guests, Table Preference (Bus Interior / Garden Canopy / Birthday Decor)",
+        "Direct WhatsApp Integration: Generates prefilled WhatsApp chat to +91 62022 4214 with booking details",
+        "Instant Call button (06202224214)"
+      ]
+    },
+    "admin_page": {
+      "route": "/admin or admin modal tab",
+      "auth": "Password protected ('mwbistro2026' default)",
+      "features": [
+        "Add new menu item",
+        "Edit item price, category, description, availability, veg/non-veg",
+        "Delete menu item",
+        "Reset to default menu"
+      ]
+    },
+    "contact_and_map": {
+      "address": "MW Bistro, P&M, Mall Rd, Kurji, Patna, Bihar 800010",
+      "phone": "06202224214",
+      "whatsapp": "+91 62022 4214",
+      "hours": "Daily: 3:00 PM - 11:30 PM",
+      "map_embed": "Google Maps embed for Kurji, Patna near P&M Mall Road"
+    },
+    "footer": {
+      "headline": "MW BISTRO",
+      "elements": ["Social Links", "Operating Hours", "Address & Directions", "Direct Call & WhatsApp CTAs", "Copyright 2026 MW Bistro Patna"]
+    }
+  },
+  "image_urls": {
+    "hero_bus_night": "https://images.pexels.com/photos/35254102/pexels-photo-35254102.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    "canopy_drapes": "https://images.unsplash.com/photo-1732007568348-36eb6c52c50c?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjY2NjV8MHwxfHNlYXJjaHwzfHxjb3p5JTIwd2FybSUyMHJvbWFudGljJTIwYnVzJTIwY2FmZSUyMG5pZ2h0JTIwZmFpcnklMjBsaWdodHMlMjBjb3VwbGVzJTIwZGluaW5nfGVufDB8fHx8MTc8OTY0MzIzM3ww&ixlib=rb-4.1.0&q=85",
+    "couples_dining": "https://images.unsplash.com/photo-1764267704129-2aa313c664f8?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjY2NjV8MHwxfHNlYXJjaHwxfHxjb3p5JTIwd2FybSUyMHJvbWFudGljJTIwYnVzJTIwY2FmZSUyMG5pZ2h0JTIwZmFpcnklMjBsaWdodHMlMjBjb3VwbGVzJTIwZGluaW5nfGVufDB8fHx8MTc8OTY0MzIzM3ww&ixlib=rb-4.1.0&q=85",
+    "bus_interior": "https://images.unsplash.com/photo-1755866928160-e8a3d1f8eb88?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjY2NjV8MHwxfHNlYXJjaHwyfHxjb3p5JTIwd2FybSUyMHJvbWFudGljJTIwYnVzJTIwY2FmZSUyMG5pZ2h0JTIwZmFpcnklMjBsaWdodHMlMjBjb3VwbGVzJTIwZGluaW5nfGVufDB8fHx8MTc8OTY0MzIzM3ww&ixlib=rb-4.1.0&q=85",
+    "street_lights": "https://images.pexels.com/photos/35269118/pexels-photo-35269118.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    "gourmet_pasta": "https://images.unsplash.com/photo-1608387802568-0c0e0d89d815?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjY2NzV8MHwxfHNlYXJjaHw0fHxnb3VybWV0JTIwcGFzdGElMjBwaXp6YSUyMGNvZmZlZSUyMGNhZmUlMjBkZXNzZXJ0JTIwZm9vZCUyMGFlc3RoZXRpY3xlbnwwfHx8fDE3ODk2NDMyMzN8MA&ixlib=rb-4.1.0&q=85",
+    "gourmet_pizza_latte": "https://images.pexels.com/photos/36086369/pexels-photo-36086369.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    "coffee_cake": "https://images.unsplash.com/photo-1578682965096-d619919e348b?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjY2NzV8MHwxfHNlYXJjaHwxfHxnb3VybWV0JTIwcGFzdGElMjBwaXp6YSUyMGNvZmZlZSUyMGNhZmUlMjBkZXNzZXJ0JTIwZm9vZCUyMGFlc3RoZXRpY3xlbnwwfHx8fDE3ODk2NDMyMzN8MA&ixlib=rb-4.1.0&q=85",
+    "table_food_spread": "https://images.unsplash.com/photo-1594201523166-c03f106bb21c?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjY2NzV8MHwxfHNlYXJjaHwzfHxnb3VybWV0JTIwcGFzdGElMjBwaXp6YSUyMGNvZmZlZSUyMGNhZmUlMjBkZXNzZXJ0JTIwZm9vZCUyMGFlc3RoZXRpY3xlbnwwfHx8fDE3ODk2NDMyMzN8MA&ixlib=rb-4.1.0&q=85",
+    "burger_pasta_spread": "https://images.pexels.com/photos/20321807/pexels-photo-20321807.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+  },
+  "instructions_to_main_agent": [
+    "This project uses Javascript (.js files) - implement components using .js and standard React JSX.",
+    "Use framer-motion for line-by-line reveal animations, smooth hover effects, card entrance animations, and lightbox transitions.",
+    "Ensure all interactive elements have data-testid attributes (e.g., data-testid='nav-book-btn', data-testid='whatsapp-booking-submit', data-testid='menu-category-tab-starters').",
+    "Include an Admin page at route '/admin' (or accessible via password protection modal) for real-time menu item CRUD editing.",
+    "The booking form must build a prefilled WhatsApp link to +91620224214 with name, date, time, guests, and table preference.",
+    "Do NOT use pure transparent header - use blur glassmorphism background (#18110D with 80% opacity + backdrop-blur-xl)."
+  ]
+}

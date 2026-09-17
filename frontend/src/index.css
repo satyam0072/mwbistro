@@ -1,0 +1,143 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    margin: 0;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+@layer base {
+    :root {
+        --background: 36 33% 96%;
+        --foreground: 22 30% 13%;
+        --card: 40 100% 99%;
+        --card-foreground: 22 30% 13%;
+        --popover: 40 100% 99%;
+        --popover-foreground: 22 30% 13%;
+        --primary: 46 65% 52%;
+        --primary-foreground: 24 33% 7%;
+        --secondary: 36 30% 92%;
+        --secondary-foreground: 22 30% 13%;
+        --muted: 36 24% 92%;
+        --muted-foreground: 25 16% 42%;
+        --accent: 46 65% 52%;
+        --accent-foreground: 24 33% 7%;
+        --destructive: 0 84.2% 60.2%;
+        --destructive-foreground: 0 0% 98%;
+        --border: 46 30% 86%;
+        --input: 36 24% 82%;
+        --ring: 46 65% 52%;
+        --radius: 0.75rem;
+    }
+}
+
+@layer base {
+    * {
+        @apply border-border;
+    }
+    body {
+        @apply bg-background text-foreground;
+        background-color: #faf6f0;
+        color: #2c1e16;
+        font-family: "Plus Jakarta Sans", ui-sans-serif, system-ui, sans-serif;
+    }
+    ::selection {
+        background: #d4af37;
+        color: #18110d;
+    }
+}
+
+@layer base {
+    [data-debug-wrapper="true"] {
+        display: contents !important;
+    }
+
+    [data-debug-wrapper="true"] > * {
+        margin-left: inherit;
+        margin-right: inherit;
+        margin-top: inherit;
+        margin-bottom: inherit;
+        padding-left: inherit;
+        padding-right: inherit;
+        padding-top: inherit;
+        padding-bottom: inherit;
+        column-gap: inherit;
+        row-gap: inherit;
+        gap: inherit;
+        border-left-width: inherit;
+        border-right-width: inherit;
+        border-top-width: inherit;
+        border-bottom-width: inherit;
+        border-left-style: inherit;
+        border-right-style: inherit;
+        border-top-style: inherit;
+        border-bottom-style: inherit;
+        border-left-color: inherit;
+        border-right-color: inherit;
+        border-top-color: inherit;
+        border-bottom-color: inherit;
+    }
+}
+
+html.lenis,
+html.lenis body {
+    height: auto;
+}
+.lenis.lenis-smooth {
+    scroll-behavior: auto !important;
+}
+
+@keyframes marquee {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-50%);
+    }
+}
+.marquee-track {
+    animation: marquee 48s linear infinite;
+}
+.marquee-track:hover {
+    animation-play-state: paused;
+}
+
+@keyframes floaty {
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-12px);
+    }
+}
+.animate-floaty {
+    animation: floaty 6s ease-in-out infinite;
+}
+
+@keyframes glow-pulse {
+    0%,
+    100% {
+        opacity: 0.5;
+    }
+    50% {
+        opacity: 1;
+    }
+}
+.animate-glow {
+    animation: glow-pulse 4s ease-in-out infinite;
+}
+
+.gold-text-gradient {
+    background: linear-gradient(120deg, #f3e5ab 0%, #d4af37 45%, #b8912b 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+.img-frame {
+    border: 1px solid rgba(212, 175, 55, 0.25);
+    box-shadow: 0 24px 60px -20px rgba(24, 17, 13, 0.45);
+}
